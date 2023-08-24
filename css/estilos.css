@@ -353,7 +353,7 @@ body::-webkit-scrollbar-corner {
 
 @media (max-width: 970px) {
     .fotosprincipal {
-        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+        grid-template-columns: 1fr; 
     }
 
     .imagenesperfil {
