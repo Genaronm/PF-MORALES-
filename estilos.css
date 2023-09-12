@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@300&family=Grenze&family=Grenze+Gotisch&family=Sunflower:wght@300&display=swap");
+/* font-family: 'Georama', sans-serif;
+
+font-family: 'Grenze Gotisch', cursive;
+
+font-family: 'Grenze', serif;
+
+font-family: 'Sunflower', sans-serif; */
+.prueba {
+  display: grid;
+  height: 1500px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sunflower", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  height: calc(100vh - 80px);
+  width: 100%;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Grenze", serif;
+  font-size: 70px;
+  background-color: black;
+  color: white;
+}
+
+h2 {
+  font-family: "Grenze", serif;
+  margin: 50px;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: black;
+}
+
+.f-letter::first-letter {
+  color: #000;
+  font-size: 30px;
+  font-family: "Sunflower", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+}
+
+a:visited {
+  color: none;
+}
+
+a:hover {
+  color: #870e0e;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #870e0e;
+  text-decoration: none;
+}
+
+.barra a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.barra {
+  text-align: center;
+  font-size: 25px;
+  font-family: font-family "Georama", sans-serif;
+  margin: 7px;
+}
+
+.barra a:hover {
+  background-color: black;
+  color: white;
+}
+
+.barra ul {
+  list-style: none;
+}
+
+.barra ul li {
+  display: inline-block;
+}
+
+.introduccion {
+  text-align: center;
+  font-size: 21px;
+  width: 46%;
+  margin-top: 18px;
+  margin-bottom: 50px;
+  margin-left: 50%;
+  padding: 20px;
+  margin-left: 20%;
+}
+
+cite {
+  font-family: "Grenze", serif;
+}
+
+.imagenesperfil {
+  --g: 2.3px;
+  --b: 5px;
+  --c: #000000;
+  padding: calc(var(--g) + var(--b));
+  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+  background: var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%), var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b), var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(50%);
+  transition: 0.3s;
+}
+
+.imagenesperfil:hover {
+  --_p: 75%;
+  filter: grayscale(0%);
+}
+
+.fotosprincipal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.columna {
+  display: grid;
+  gap: 20px;
+}
+
+.itemimportante {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.imagenesperfil {
+  height: 560px;
+  width: 480px;
+}
+
+.parrafos {
+  padding: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Georama", sans-serif;
+  border: 2px solid black;
+}
+
+.parrafos2 {
+  padding-bottom: 3%;
+}
+
+.galerias {
+  height: 560px;
+  width: 435px;
+  padding: 2%;
+  max-width: 100%;
+  height: auto;
+}
+
+.imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.imagenes > * {
+  margin: auto;
+}
+
+.librostatto {
+  display: grid;
+  justify-content: center;
+}
+
+.libroslink {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.fotoslibros {
+  --g: 2.3px;
+  --b: 5px;
+  --c: #000000;
+  padding: calc(var(--g) + var(--b));
+  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+  background: var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%), var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b), var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(50%);
+  transition: 0.3s;
+  margin: 10%;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Grenze", serif;
+  background-color: black;
+  color: white;
+}
+
+input {
+  border-radius: 10px;
+  text-align: justify;
+  padding: 3px;
+  border: #000000;
+  font-size: 12px;
+  box-shadow: gray;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#pagina-contacto.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  text-align: center;
+}
+
+.container label {
+  color: #000;
+}
+
+.container input[type=text],
+.container input[type=email],
+.container textarea {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.container button[type=submit] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+footer {
+  align-self: flex-end;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.barrabaja {
+  text-align: center;
+  font-family: font-family "Georama", sans-serif;
+  color: white;
+}
+
+.barrabaja a {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+
+.barrabaja a:hover {
+  background-color: black;
+  color: white;
+}
+
+.barrabaja ul {
+  list-style: none;
+}
+
+.barrabaja ul li {
+  display: inline-block;
+}
+
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-button {
+  background-color: #f0f0f0;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-track-piece {
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-corner {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 970px) {
+  .fotosprincipal {
+    grid-template-columns: 1fr;
+  }
+  .imagenesperfil {
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=estilos.css.map */
