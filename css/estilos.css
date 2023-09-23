@@ -165,8 +165,10 @@ cite {
     border: 2px solid black;
 }
 
-.parrafos2 {
-    padding-bottom: 3%;
+.parrafos2{
+    text-align: center;
+    font-size: 25px;
+    background-color: #ccc;
 }
 
 .galerias {
